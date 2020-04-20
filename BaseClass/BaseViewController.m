@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //隐藏navbar
+  
    // self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"当前VC：%@",[self class]);
+    NSLog(@" VC：%@",[self class]);
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -40,7 +40,7 @@
     
     BeiBanView1 *beiban = [BeiBanView1 flagView];
     mErrView = beiban;
-    beiban.content.text = @"暂无记录";
+    beiban.content.text = @" ";
     [v addSubview:beiban];
     beiban.frame = CGRectMake(0, 0, v.frame.size.width, v.frame.size.height);
     return;
@@ -69,7 +69,7 @@
 
     [self.navigationController popViewControllerAnimated:YES];
 }
-//设置navbarView
+ 
 -(void)setBanar:(NSString*)titles hiddeBack:(BOOL)show{
     
     if(mTitleLab != nil){
@@ -82,16 +82,14 @@
     UIView* navView = [[UIView alloc]init];
     navView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:mNavBar = navView];
-   
-    //添加给view1约束
+ 
     [navView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(self.view.mas_top).with.offset(0);
         make.left.equalTo(self.view.mas_left).with.offset(0);
         make.right.equalTo(self.view.mas_right).with.offset(0);
         make.height.equalTo(@navBarHeight);
-        //设置代码可以更简单（效果与上面的是一样的）
-        //make.edges.equalTo(superView).with.insets(pading);
+         //make.edges.equalTo(superView).with.insets(pading);
     }];
     
     UILabel* titleLab = [[UILabel alloc] init];
@@ -128,7 +126,7 @@
            
             make.height.equalTo(@44);
             make.width.equalTo(@50);
-            //设置代码可以更简单（效果与上面的是一样的）
+           
             //make.edges.equalTo(superView).with.insets(pading);
         }];
         [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];

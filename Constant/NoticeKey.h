@@ -6,6 +6,6 @@
 #define zfbPaySuccessful @"zfbPay"
 #define wxPaySuccessful @"wxPay"
 
-#define notiorderType @"notiorderType"   //订单界面像指示图发送索引
+#define notiorderType @"notiorderType"   
 
 @end

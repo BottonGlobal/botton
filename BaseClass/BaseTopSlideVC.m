@@ -22,8 +22,7 @@
 }
 
 -(void)addTitle:(NSArray*)titleList addControllerFun:(NSArray*)vcList{
-    
-    //配置容器
+   
     SGPageTitleViewConfigure *configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
     configure.indicatorAdditionalWidth = 10;
     configure.titleGradientEffect = YES;
@@ -36,18 +35,17 @@
     
 
     
-    //顶部Title数据源
+ 
     SGPageTitleView *pageTitleView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(0, navBarHeight, ScreenW, 44) delegate:self titleNames:titleList configure:configure];
     pageTitleView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:pageTitleView];
-    mTileView = pageTitleView;
-    //创建容器装载VCs
+ 
     SGPageContentScrollView *pageContentScrollView = [[SGPageContentScrollView alloc] initWithFrame:CGRectMake(0, navBarHeight+44,ScreenW,  ScreenH - navBarHeight -44) parentVC:self childVCs:vcList];
     pageContentScrollView.delegatePageContentScrollView = self;
     pageContentScrollView.isAnimated = YES;
     mPageContentScrollView = pageContentScrollView;
     [self.view addSubview:pageContentScrollView];
-    for (int b=0; b<vcList.count; b++) {//全部加载出来
+    for (int b=0; b<vcList.count; b++) { 
         [pageContentScrollView setPageContentScrollViewCurrentIndex:b];
     }
     
@@ -56,7 +54,7 @@
    
 }
 
-//顶部title切换完成调用
+ 
 - (void)pageTitleView:(SGPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex
 {
     [mPageContentScrollView setPageContentScrollViewCurrentIndex:selectedIndex];

@@ -7,7 +7,7 @@
 // Dictionary
 #define EDDictionaryWithObjectsAndKeys(firstObject, ...) [NSDictionary dictionaryWithObjectsAndKeys:firstObject, ##__VA_ARGS__, nil];
 
-// 单例
+
 #define DEFINE_SINGLETON_FOR_CLASS(className) \
 \
 + (className *)shareInstance;

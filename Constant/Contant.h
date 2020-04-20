@@ -5,7 +5,7 @@
 
 #define PI 3.14
     
-    //屏幕高宽
+   
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 
@@ -13,17 +13,12 @@
 #define IS_IPHONEX (ScreenH == 812.0f)?YES:NO
 #define navBarHeight ((IS_IPHONEX == YES)? 88.0f:64.0f)
 #define bottomY ((IS_IPHONEX == YES)?30.0f:0.0f)
-
-    //系统版本
+ 
 #define IOSVer [[[UIDevice currentDevice] systemVersion]floatValue]
-   
-    //app的版本号
+ 
 #define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-    
-    //app build版本号
-#define kAppBuildVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
-    
-    //weak self
+ 
+#define kAppBuildVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] 
 #define WeakSelf(type) __weak typeof(type) weak##type = type
 
 #define ALPHANUM123 @"0123456789."
