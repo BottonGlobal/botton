@@ -1,11 +1,4 @@
-//
-//  BaseTopSlideVC.m
-//  ScmProject
-//
-//  Created by zhoudong on 2018/12/12.
-//  Copyright © 2018年 session. All rights reserved.
-//
-
+ 
 #import "BaseTopSlideVC.h"
 #import "SGPageTitleView.h"
 #import "SGPageTitleViewConfigure.h"

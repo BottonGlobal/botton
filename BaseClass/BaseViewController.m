@@ -1,10 +1,4 @@
-//
-//  BaseViewController.m
-//  yiTang
-//
-//  Created by zhoudong on 16/1/11.
-//  Copyright © 2016年 zhoudong. All rights reserved.
-//
+ 
 
 #import "BaseViewController.h"
 #import "Masonry.h"

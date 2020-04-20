@@ -1,10 +1,4 @@
-//
-//  CallJsClass.h
-//  ScmProject
-//
-//  Created by zhoudong on 2018/8/4.
-//  Copyright © 2018年 session. All rights reserved.
-//
+ 
 typedef NS_ENUM(NSInteger,currencyType)
 {
     

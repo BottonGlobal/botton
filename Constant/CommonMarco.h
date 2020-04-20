@@ -1,10 +1,3 @@
-//
-//  EDCommonMarco.h
-//  Communication
-//
-//  Created by ination on 15/5/26.
-//  Copyright (c) 2015年 ination. All rights reserved.
-//
 
 #ifndef Communication_CommonMarco_h
 #define Communication_CommonMarco_h
